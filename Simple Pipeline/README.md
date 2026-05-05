@@ -3,7 +3,7 @@
 This guide explains how to orchestrate data pipeline on **Linux, Windows, and macOS** using prefect and Docker-based task containers. 
 
 ---
-## Step 0: Install Docker Engine / Docker Desktop
+## Step 0 — Install Docker Engine / Docker Desktop
 For Docker installation procedures on various operating systems, go to [link](https://www.docker.com/get-started/).
 
 ## Step 1 — Clone or download the `simple_pipeline.py` and the datasets files. 
@@ -35,7 +35,7 @@ prefect server start (terminal 1)
 prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api  (terminal 2)
 ```
 
-## Step 4: Execute the pipeline
+## Step 4 — Execute the pipeline
 ```python simple_pipeline.py```
 
 Access the prefect UI on your browser via: http://127.0.0.1:4200
