@@ -1,16 +1,16 @@
 # Simple Pipeline — Setup & Execution Guide
 
-This guide explains how to run the **Prefect-based pipeline** using the provided dataset and Docker-based task containers on **Linux, Windows, and macOS**.
+This guide explains how to orchestrate data pipeline on **Linux, Windows, and macOS** using prefect and Docker-based task containers. 
 
 ---
 ## Step 0: Install Docker Engine / Docker Desktop
-Before running the pipeline, ensure Docker is installed and running. Go to [link](https://www.docker.com/get-started/).
+For Docker installation procedures on various operating systems, go to [link](https://www.docker.com/get-started/).
 
-## Step 1 — Clone or Copy the Project
+## Step 1 — Clone this repository/Download the 'simple_pipeline.py` and the datasets files. 
 Open `simple_pipeline.py` in your preferred IDE/text editor and update the paths of the `DATASET_DIR` & `HOST_SHARED_DIR`. E.g
 
 ```python
-DATASET_DIR = "/homelocal/user/Datasets" # to access the real datasets
+DATASET_DIR = "/homelocal/user/Datasets/raw" # to access the real datasets
 HOST_SHARED_DIR = "/homelocal/user/Datasets/intermediate"  # to store the intermediate files
 ```
 
