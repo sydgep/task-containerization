@@ -6,10 +6,8 @@ This guide explains how to run the **Prefect-based pipeline** using the provided
 ## Step 0: Install Docker Engine / Docker Desktop
 Before running the pipeline, ensure Docker is installed and running. Go to [link](https://www.docker.com/get-started/).
 
-## 📁 Step 1 — Clone or Copy the Project
-### 🔧 Modify Paths in the Pipeline
-
-Open `simple_pipeline.py` in your preferred IDE/text editor and update the paths of the `DATASET_DIR` & `HOST_SHARED_DIR`. For example
+## Step 1 — Clone or Copy the Project
+Open `simple_pipeline.py` in your preferred IDE/text editor and update the paths of the `DATASET_DIR` & `HOST_SHARED_DIR`. E.g
 
 ```python
 DATASET_DIR = "/homelocal/user/Datasets" # to access the real datasets
@@ -30,16 +28,14 @@ py -m venv sydgep_venv
 pip install prefect==3.6.20 docker pandas pyarrow fastparquet
 ```
 
-## Step 3 — Configure & Start Prefect Server
-### Start Prefect Server
+## Step 3 — Start Prefect Server
 
-```prefect server start
 ```
-### Configure API URL (new terminal)
-```prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api```
+prefect server start
+prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api
+```
 
 ## Step 4: Execute the pipeline
 ```python simple_pipeline.py```
-
 
 Access the prefect UI on your browser via: http://127.0.0.1:4200
