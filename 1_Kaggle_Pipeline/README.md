@@ -1,15 +1,12 @@
-# Simple Pipeline — Synthetic Data Generation for Lung Cancer Prediction 
+# Simple Pipeline 
 
-### Overview: 
-The pipeline is designed to ingest real tabular datasets (from Kaggle), preprocess, clean, generate and evaluate synthetic data.
-### Goal: 
-To orchestrate data pipeline implemeted using prefect and Docker-based task containers on **Linux, Windows, and macOS**. 
+This pipeline ingest real tabular datasets (from Kaggle), preprocess, clean, generate and evaluate synthetic data for **lung cancer prediction**. The goal is to orchestrate the pipeline on **Linux, Windows, and macOS**. 
 
 ---
 ## Pre-requisite — Install Docker Engine / Docker Desktop
 For Docker installation procedures on various operating systems, go to [link](https://www.docker.com/get-started/).
 
-## Step 1 — Clone or download the `simple_pipeline.py` and the datasets files. 
+## Step 1 — Copy or download the `simple_pipeline.py` and the datasets files. 
 Open `simple_pipeline.py` in your preferred IDE/text editor and update the paths of the `DATASET_DIR` & `HOST_SHARED_DIR`. E.g
 
 ```python
