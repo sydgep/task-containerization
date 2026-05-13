@@ -1,18 +1,16 @@
-# Simple Pipeline — Setup & Execution Guide
+# MIMICIV Pipeline — Data Integration and Synthetic data generation for Mortality Prediction
 
 This guide explains how to orchestrate data pipeline on **Linux, Windows, and macOS** using prefect and Docker-based task containers. 
 
 ---
-## Step 0 — Install Docker Engine / Docker Desktop
+## Pre-requisites
+### A - Install Docker Engine / Docker Desktop
 For Docker installation procedures on various operating systems, go to [link](https://www.docker.com/get-started/).
+### B - Download MIMICIV Datasets
 
-## Step 1 — Clone or download the `simple_pipeline.py` and the datasets files. 
-Open `simple_pipeline.py` in your preferred IDE/text editor and update the paths of the `DATASET_DIR` & `HOST_SHARED_DIR`. E.g
 
-```python
-DATASET_DIR = "/homelocal/user/Datasets/raw" # to access the real datasets
-HOST_SHARED_DIR = "/homelocal/user/Datasets/intermediate"  # to store the intermediate files
-```
+## Step 1 — Copy or download the `mimic_pipeline.py` file. 
+Open `mimic_pipeline.py` in your preferred IDE/text editor and update the paths of the `DATASET_DIR` & `HOST_SHARED_DIR`.
 
 ## Step 2 — Create Virtual Environment & Install Dependencies
 ### Linux & macOS users
@@ -36,6 +34,6 @@ prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api  (terminal 2)
 ```
 
 ## Step 4 — Execute the pipeline
-```python simple_pipeline.py```
+```python mimic_pipeline.py```
 
 Access the prefect UI on your browser via: http://127.0.0.1:4200
