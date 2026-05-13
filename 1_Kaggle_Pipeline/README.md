@@ -1,9 +1,12 @@
-# Simple Pipeline — Setup & Execution Guide
+# Simple Pipeline — Synthetic Data Generation for Lung Cancer Prediction 
 
-This guide explains how to orchestrate data pipeline on **Linux, Windows, and macOS** using prefect and Docker-based task containers. 
+### Overview: 
+The pipeline is designed to ingest real tabular datasets (from Kaggle), preprocess, clean, generate and evaluate synthetic data.
+### Goal: 
+To orchestrate data pipeline implemeted using prefect and Docker-based task containers on **Linux, Windows, and macOS**. 
 
 ---
-## Step 0 — Install Docker Engine / Docker Desktop
+## Pre-requisite — Install Docker Engine / Docker Desktop
 For Docker installation procedures on various operating systems, go to [link](https://www.docker.com/get-started/).
 
 ## Step 1 — Clone or download the `simple_pipeline.py` and the datasets files. 
