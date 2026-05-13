@@ -1,13 +1,14 @@
-# MIMICIV Pipeline — Data Integration and Synthetic data generation for Mortality Prediction
+# MIMIC-IV Pipeline 
 
-This guide explains how to orchestrate data pipeline on **Linux, Windows, and macOS** using prefect and Docker-based task containers. 
+This pipeline ingest several datasets form MIMIC_IV, preprocess, integrate, generate and evaluate synthetic dataset for mortality prediction. The objective is to orchestrate the pipeline on **Linux, Windows, and macOS**. 
 
 ---
 ## Pre-requisites
 ### A - Install Docker Engine / Docker Desktop
 For Docker installation procedures on various operating systems, go to [link](https://www.docker.com/get-started/).
-### B - Download MIMICIV Datasets
-
+### B - Download MIMIC-IV Datasets
+This is a restricted-access resource. To access the datasets, you must be **be a credentialed user**,  **complete required training** and **sign the data use agreement for the project**
+[MIMIC-IV](https://physionet.org/content/mimiciv/2.0/)
 
 ## Step 1 — Copy or download the `mimic_pipeline.py` file. 
 Open `mimic_pipeline.py` in your preferred IDE/text editor and update the paths of the `DATASET_DIR` & `HOST_SHARED_DIR`.
